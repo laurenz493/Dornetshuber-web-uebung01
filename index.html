@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+</head>
+
+<body style="background-color: green;">
+
+    <h1>Laurenz Dornetshuber 6R</h1>
+    <h2>Persönliche Daten</h2>
+    <p>Geburtsdatum: 18.03.2010, Lieblingsfarbe: grün</p>
+    <h2>Meine Lieblingsfächer</h2>
+    <ol>
+        <li>Biologie</li>
+        <li>Informatik</li>
+        <li>Sport</li>
+    </ol>
+    <h2>Meine Hobbys</h2>
+    <ul id="liste-hobbys"></ul>
+    <h2>Freies Bild</h2>
+    <figure>
+        <img src="hobby.jpg" width="400">
+    </figure>
+    <script>
+        const hobbys = ["Fußball", "Lesen", "Tanzen", "Laurenz Dornetshuber"];
+        const liste = document.getElementById("liste-hobbys");
+        hobbys.forEach(h => {
+            let li = document.createElement("li");
+            li.textContent = h;
+            liste.appendChild(li);
+        });
+    </script>
+
+</body>
